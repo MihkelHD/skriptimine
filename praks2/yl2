@@ -1,0 +1,10 @@
+#!/bin/bash
+#
+#See on tervitusskript
+#Tere [kasutajanimi]!
+#
+echo -n "Tere, "
+echo -n `whoami`
+echo "!"
+#
+#The end
