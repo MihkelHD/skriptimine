@@ -1,0 +1,9 @@
+#!/bin/bash
+#
+#See on tervitusskript
+#
+echo -n "Tere, "
+echo -n "Mihkel"
+echo "!"
+#
+#The end
