@@ -1,0 +1,9 @@
+#!/bin/bash
+#muljed saavutustest antud aines
+#algus
+#
+echo -n "Mihkel "
+echo "Sillakivi"
+echo "ISP16"
+echo "Väga lahe on juba ja loodan, et seda ainet tuleb veel palju."
+echo "Ma arvan et mul läheb hästi, saan aru kõigest mis kirjutan siia."
