@@ -1,10 +1,10 @@
 #!/bin/bash
-#kasutajate nimekiri kujul Perenimi, Eesnimi
+#kasutaja tervitus
 #algus
 #
-who | cut -f1 -d" " | cut -f2 -d"." > perenimi
-who | cut -f1 -d" " | cut -f1 -d"." > eesnimi
-paste -d"." perenimi eesnimi > nimed
-cat nimed | sort | uniq
+echo -n "Tere "
+echo -n `whoami | cut -c1 | tr [:lower:] [:upper:]`
+echo -n `whoami | cut -c2-`
+echo "!"
 #
 #lõpp
