@@ -4,9 +4,17 @@
 #
 #Kasutame keskonna muutuja nimega $USER
 #tervitame kasutajat
-echo "Tere, $USER!"
+echo -n "Tere, "
+echo -n `whoami | cut -c1 | tr [:lower:] [:upper:]`
+echo -n `whoami | cut -c2-`
+echo "!"
 #kuupäeva väärtuse loomine
 #defineerime vastava väärtusega muutuja
 kuupaev=`date +'%d. %B'`
 #väljastame kuupäeva koos seletusega
 echo "Täna on $kuupaev"
+#kella väärtuse loomine
+#defineerime vastava väärtusega muutuja
+kell=`date +'%H: %M'`
+#väljastame kell koos seletusega
+echo "Kell on $kell"
