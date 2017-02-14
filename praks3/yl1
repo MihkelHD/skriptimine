@@ -2,3 +2,6 @@
 #
 #Keskkonna ja oma muutujate kasutamine.
 #
+#Kasutame keskonna muutuja nimega $USER
+#tervitame kasutajat
+echo "Tere, $USER!"
