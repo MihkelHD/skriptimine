@@ -2,8 +2,14 @@
 #
 #Arvu kontroll - positiivne või negatiivne
 #
-echo -n "Sisesta arv:"
-read arv
+#kontrollime, kas on sisestatud üks parameeter
+if [ $# -ne 1 ];then
+echo "Kasutusjuhend:"
+echo "$0 arv"
+echo "Näiteks: $0 5"
+#Kui on kõik korras, ja parameetrite arv 1
+else
+arv=$1
 #nüüd kontrollime, kas arv on positiivne
 #sel juhul peab arv olema suurem kui 0
 if [ $arv -gt 0 ]; then
@@ -14,4 +20,5 @@ elif [ $arv -lt 0 ]; then
 echo "$arv on negatiivne"
 else
 echo "$arv on neutraalne"
+fi
 fi
