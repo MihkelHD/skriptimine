@@ -1,25 +1,13 @@
 #!/bin/bash
 #
-#10 esimese arvu summa - liida ainult paaris arvud
 #
-echo -n "Sisesta suvaline täisarv: "
-read arv1
-kriips=""
-aarv=$arv1
-while [ $arv1 -eq 0 ]; do
-	echo -n "Sisesta palun teine täisarv: "
-	read arv1
-done
-if [ $arv1 -lt 0 ]; then
-	arv1=$(($arv1 * -1))
-	kriips="-"
-fi
-summa=0
-while [ $arv1 -gt 0  ]
+#
+for (( a =1; a <= 5; a++ ))
 do
-	jaak=$(($arv1 % 10))
-	summa=$(($summa + $jaak))
-	arv1=$(($arv1 / 10))
+	echo -n "$a. "
+	for (( j = 1; j <= 3; j++ ))
+	do
+		echo -n "*"
+	done
+   echo
 done
-echo "Arvu $aarv numbrite summa on: $kriips$summa"
-#skripti lõpp

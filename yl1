@@ -1,14 +1,13 @@
 #!/bin/bash
 #
-#10 esimese arvu summa - liida ainult paaris arvud
 #
-summa=0
-for (( arv=1; arv<=10; arv++ ))
+#
+for (( a =1; a <= 5; a++ ))
 do
-	jaak=$(($arv % 2))
-	if [ $jaak -eq 0  ]; then
-		summa=$(($summa + $arv))
-		echo $summa
-	fi
+	echo -n "$a. "
+	for (( j = 1; j <= 5; j++ ))
+	do
+		echo -n "*"
+	done
+   echo
 done
-#skripti lõpp
